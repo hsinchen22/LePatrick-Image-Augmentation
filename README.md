@@ -19,7 +19,7 @@ This project cranks up object detection and supercharges LeBron’s highlight cl
 </div>
 <br/>
 
-### [Table of Contents](#table-of-contents)
+### Table of Contents
 - [Overview - Who're you callin pinhead?!](#overview---whore-you-callin-pinhead)
 	- [How It Works](#how-it-works)
 	- [Results & Comparison](#results--comparison)
