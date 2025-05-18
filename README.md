@@ -73,12 +73,10 @@ We compare the performance of various augmentation techniques.
 [LeBron Detection]():
 A YOLO model is used to detect LeBron in each video frame, generating bounding boxes to isolate him from the background. To maintain consistent localization, the bounding box coordinates are slightly padded. This process ensures reliable tracking and minimizes jitter across frames.
 
+<img src="images/confusion_matrix.png" align="right" width="300">
+
 [Action Classification]():
 Detected clips are preprocessed and fed into a fine-tuned 3D ResNet (R3D-18) model, which classifies actions into four categories: NONE, SHOOT, LAYUP, and DUNK.
-
-<div align="center" style="margin: 10px;">
-	<img src="images/confusion_matrix.png" width="300">
-</div>
 
 The model is fine-tuned using **Focal Loss** to address the class imbalance inherent in sports highlight detection, where non-highlight actions are significantly more frequent. 
 This loss function down-weights easy examples, allowing the model to focus on harder, rarer events. Probability scores are smoothed over consecutive frames to enhance prediction stability.
