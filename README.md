@@ -64,7 +64,8 @@ We compare the performance of various augmentation techniques.
 </div>
 <br/>
 
-The Patrick method substantially enhances detection performance, and the plot clearly shows that combining Patrick with Copy-Paste consistently outperforms other methods, indicating that Patrick is additive to Copy-Paste.
+* **Patrick** substantially improves detection performance and is additive with Copy-Paste
+* The combination of Patrick and Copy-Paste consistently outperforms other augmentation methods
 
 <a id="1-3"></a>
 ### Highlight Clipping
