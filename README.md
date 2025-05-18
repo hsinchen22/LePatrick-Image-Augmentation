@@ -9,12 +9,13 @@ This project cranks up object detection and supercharges LeBron’s highlight cl
 
 [Explore the repo and see how this surprising combo is making it happen! »]()
 
+<br/>
 <div>
-<img src="https://img.shields.io/badge/Python-FFD43B.svg?logo=Python&logoColor=blue" height="20"/>
-<img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white" height="20"/>
-<img src="https://img.shields.io/badge/OpenCV-8BDA67.svg?logo=OpenCV&logoColor=white" height="20"/>
-<img src="https://img.shields.io/badge/YOLOv11-111F68.svg?logo=YOLO&logoColor=white" height="20"/>
-<img src="https://img.shields.io/badge/Roboflow-6706CE.svg?logo=Roboflow&logoColor=white" height="20"/>
+	<img src="https://img.shields.io/badge/Python-FFD43B.svg?logo=Python&logoColor=blue" height="20"/>
+	<img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white" height="20"/>
+	<img src="https://img.shields.io/badge/OpenCV-8BDA67.svg?logo=OpenCV&logoColor=white" height="20"/>
+	<img src="https://img.shields.io/badge/YOLOv11-111F68.svg?logo=YOLO&logoColor=white" height="20"/>
+	<img src="https://img.shields.io/badge/Roboflow-6706CE.svg?logo=Roboflow&logoColor=white" height="20"/>
 </div>
 <br/>
 
@@ -54,72 +55,16 @@ Augmented Patricks are positioned based on a 2D Gaussian distribution centered o
 
 <a id="1-2"></a>
 ### Results & Comparison
-<div align="center">
-	<img src="AP@50-90.svg" width="400">
-</div>
 
-<table>
-	<thead>
-		<tr>
-			<th>Method</th>
-			<th>Precision</th>
-			<th>Recall</th>
-			<th>F1-Score</th>
-			<th>AP<sub>50</sub></th>
-			<th>AP<sub>50-95</sub></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Baseline</td>
-			<td>95.7</td>
-			<td>86.4</td>
-			<td>90.8</td>
-			<td>91.7</td>
-			<td>72.4</td>
-		</tr>
-		<tr>
-			<td>Random Erasing [1]</td>
-			<td>95.2</td>
-			<td>87.0</td>
-			<td>90.9</td>
-			<td>91.6</td>
-			<td>71.7</td>
-		</tr>
-		<tr>
-			<td>Hide-and-Seek [2]<sub></td>
-			<td>95.5</td>
-			<td>85.2</td>
-			<td>90.1</td>
-			<td>91.2</td>
-			<td>71.1</td>
-		</tr>
-		<tr>
-			<td>Copy-Paste [3]</td>
-			<td>91.0 <span style="color:red;">(-4.7)</span></td>
-			<td>91.0 <a>(+3.6)</a></td>
-			<td>91.0 <a>(+0.2)</a></td>
-			<td>92.2 <a>(+0.5)</a></td>
-			<td>74.2 <a>(+0.5)</a></td>
-		</tr>
-		<tr>
-			<td>Patrick</td>
-			<td>96.5 <a>(+0.8)</a></td>
-			<td>88.4 <a>(+2.0)</a></td>
-			<td>92.3 <a>(+1.5)</a></td>
-			<td>93.1 <a>(+1.4)</a></td>
-			<td>73.9 <a>(+1.5)</a></td>
-		</tr>
-		<tr style="font-weight: bold;">
-			<td>Copy-Paste + Patrick</td>
-			<td>96.7 <a>(+1.0)</a></td>
-			<td>90.5 <a>(+3.1)</a></td>
-			<td>92.8 <a>(+2.0)</a></td>
-			<td>93.3 <a>(+1.6)</a></td>
-			<td>75.1 <a>(+2.7)</a></td>
-		</tr>
-  	</tbody>
-</table>
+We compare the performance of various augmentation techniques.
+
+<div align="center" style="display: inline-block;">
+	<img src="images/comparison.png" width="60%" style="vertical-align: middle;">
+    <img src="images/AP@50-90.svg" width="34%" style="vertical-align: middle;">
+</div>
+<br/>
+
+The Patrick method substantially enhances detection performance, and the plot clearly shows that combining Patrick with Copy-Paste consistently outperforms other methods, indicating that Patrick is additive to Copy-Paste.
 
 <a id="1-3"></a>
 ### Highlight Clipping
@@ -166,4 +111,4 @@ Have questions, suggestions, or just want to share your favorite bar crawl story
 
 We look forward to assisting you and ensuring your experience with our product is successful and enjoyable!
 
-### <a href="#readme-top">Back to top</a>
+<a href="#readme-top">Back to top</a>
