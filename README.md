@@ -35,7 +35,12 @@ This project revolutionizes object detection and takes LeBron’s highlight clip
 - [Contact - Marty?! Janet?! Who are you people?!](#-contact---marty-janet-who-are-you-people)
 
 <br/>
-<img src="images/demo.gif" width="100%">
+
+<div align="center">
+	<img src="images/demo1.gif" width="49%">
+	<img src="images/demo2.gif" width="49%">
+</div>
+<br/>
 
 ## ⭐ Overview - Who're you callin pinhead?!
 
