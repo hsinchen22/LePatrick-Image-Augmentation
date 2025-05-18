@@ -3,9 +3,9 @@
 
 <img src="images/logo.png" align="right" width="360">
 
-LEEDLE LEEDLE LEEDLE LEE! We've cooked up something special with a friend named Patrick! 👑🔥
+Meet Mr. Dr. Professor Patrick — the ultimate game-changer in image augmentation! 🎩✨
 
-This project playfully pushes the boundaries of image augmentation to seriously amp up object detection and give highlight clipping a major upgrade, bringing you LeBron's epic moments like never before.
+This quirky project cranks up object detection and supercharges LeBron’s highlight clipping, turning ordinary moments into slam-dunk spectacles like never before.
 
 [Explore the repo and see how this surprising combo is making it happen! »]()
 
@@ -20,13 +20,13 @@ This project playfully pushes the boundaries of image augmentation to seriously 
 
 ### Table of Contents
 <ul>
-	<li><a href="#1">Overview - That's Mr. Dr. Professor Patrick to you!</a></li>
+	<li><a href="#1">Overview - LEEDLE LEEDLE LEEDLE LEE!</a></li>
     <ul>
 		<li><a href="#1-1">How It Works</a></li>
 		<li><a href="#1-2">Results & Comparison</a></li>
 		<li><a href="#1-3">Highlight Clipping</a></li>
 	</ul>
-    <li><a href="#2">Getting Started - We're not cavemen! WE HAVE TECHNOLOGY!</a></li>
+    <li><a href="#2">Getting Started - WE HAVE TECHNOLOGY!</a></li>
     <ul>
         <li><a href="#2-1">Prerequisites</a></li>
         <li><a href="#2-2">Installation</a></li>
@@ -37,7 +37,7 @@ This project playfully pushes the boundaries of image augmentation to seriously 
 <br/>
 
 <a id="1"></a>
-## Overview - That's Mr. Dr. Professor Patrick to you!
+## Overview - LEEDLE LEEDLE LEEDLE LEE!
 
 This project playfully pushes the boundaries of image augmentation to seriously amp up object detection and give highlight clipping a major upgrade, bringing you LeBron's epic moments like never before.
 
