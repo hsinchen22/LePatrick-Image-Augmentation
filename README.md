@@ -5,7 +5,9 @@
 
 LEEDLE LEEDLE LEEDLE LEE! We've cooked up something special with a friend named Patrick! 👑🔥
 
-[Explore the repo and see how this surprising combination is making it happen! »]()
+This project playfully pushes the boundaries of image augmentation to seriously amp up object detection and give highlight clipping a major upgrade, bringing you LeBron's epic moments like never before.
+
+[Explore the repo and see how this surprising combo is making it happen! »]()
 
 <div>
 <img src="https://img.shields.io/badge/Python-FFD43B.svg?logo=Python&logoColor=blue" height="20"/>
@@ -44,8 +46,8 @@ This project playfully pushes the boundaries of image augmentation to seriously 
 
 The augmentation pipeline employs a series of transformations to generate diverse training samples:
 
-* ["Patrick" Imprinting]():
+* <a>"Patrick" Imprinting</a>:
 The specific visual element is randomly color-augmented with hue and saturation adjustments and randomly scaled within a range of 0.8 to 1.2. This introduces varied appearances and placements to help the model better generalize across different visual conditions.
 
-* [Dynamic Positioning]():
+* <a>Dynamic Positioning</a>:
 Augmented Patricks are positioned based on a 2D Gaussian distribution centered on the LeBron bounding boxes, introducing controlled randomness that mimics natural variations and occlusions between players. This helps the model learn to recognize objects despite shifts and partial overlaps in their locations.
