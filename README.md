@@ -1,5 +1,5 @@
 <a id="readme-top"></a>
-## LePatrick Ace: Augmenting Images for Enhanced Detection & Highlight Clipping
+## LePatrick Image Augmentation for Better Detection & Clipping
 
 <img src="/images/logo.png" align="right" width="200">
 
