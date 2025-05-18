@@ -19,31 +19,30 @@ This project cranks up object detection and supercharges LeBron’s highlight cl
 </div>
 <br/>
 
-### Table of Contents
-<ul>
-	<li><a href="#1">Overview - Who're you callin pinhead?!</a></li>
-    <ul>
-		<li><a href="#1-1">How It Works</a></li>
-		<li><a href="#1-2">Results & Comparison</a></li>
-		<li><a href="#1-3">Highlight Clipping</a></li>
-	</ul>
-    <li><a href="#2">Usage - We're not cavemen! WE HAVE TECHNOLOGY!</a></li>
-    <ul>
-        <li><a href="#2-1">Prerequisites</a></li>
-        <li><a href="#2-2">Installation</a></li>
-    </ul>
-    <li><a href="#3">License - We should take Bikini Bottom, and push it somewhere else!</a></li>
-    <li><a href="#4">Contact - Marty?! Janet?! Who are you people?!</a></li>
-</ul>
-<br/>
+### [Table of Contents](#table-of-contents)
+- [Overview - Who're you callin pinhead?!](#overview---whore-you-callin-pinhead)
+	- <a href="#1-1">How It Works</a>
+	- <a href="#1-2">Results & Comparison</a>
+	- <a href="#1-3">Highlight Clipping</a>
 
-<a id="1"></a>
+- [Usage - We're not cavemen! WE HAVE TECHNOLOGY!](#usage---were-not-cavemen-we-have-technology)
+	- <a href="#2-1">Prerequisites</a>
+	- <a href="#2-2">Installation</a>
+
+- [License - We should take Bikini Bottom, and push it somewhere else!](#license---we-should-take-bikini-bottom-and-push-it-somewhere-else)
+
+- [Contact - Marty?! Janet?! Who are you people?!](#contact---marty-janet-who-are-you-people)
+
 ## Overview - Who're you callin pinhead?!
 
 This project playfully pushes the boundaries of image augmentation to seriously amp up object detection and give highlight clipping a major upgrade, bringing you LeBron's epic moments like never before.
 
 <a id="1-1"></a>
-### How It Works
+<details>
+<summary>
+<b> How It Works</b>
+</summary>
+<br/>
 
 The augmentation pipeline employs a series of transformations to generate diverse training samples:
 
@@ -52,9 +51,14 @@ The specific visual element is randomly color-augmented with hue and saturation 
 
 * [Dynamic Positioning]():
 Augmented Patricks are positioned based on a 2D Gaussian distribution centered on the LeBron bounding boxes, introducing controlled randomness that mimics natural variations and occlusions between players. This helps the model learn to recognize objects despite shifts and partial overlaps in their locations.
+</details>
 
 <a id="1-2"></a>
-### Results & Comparison
+<details open>
+<summary>
+<b> Results & Comparison</b>
+</summary>
+<br/>
 
 We compare the performance of various augmentation techniques.
 
@@ -64,38 +68,62 @@ We compare the performance of various augmentation techniques.
 </div>
 <br/>
 
-* Patrick substantially improves detection performance and is additive with Copy-Paste;
-* The combination of Patrick and Copy-Paste consistently outperforms other augmentation methods.
+> [!IMPORTANT]
+> Patrick substantially improves detection performance and is additive with Copy-Paste;
+>
+> The combination of Patrick and Copy-Paste consistently outperforms other augmentation methods.
+</details>
 
 <a id="1-3"></a>
-### Highlight Clipping
+<details>
+<summary>
+<b> Highlight Clipping</b>
+</summary>
+<br/>
 
 * [LeBron Detection]():
 A YOLO model is used to detect LeBron in each video frame, generating bounding boxes to isolate him from the background. To maintain consistent localization, the bounding box coordinates are slightly padded. This process ensures reliable tracking and minimizes jitter across frames.
-  
-<img src="images/confusion_matrix.png" align="right" width="360" style="margin: 10px;">
 
 * [Action Classification]():
 Detected clips are preprocessed and fed into a fine-tuned 3D ResNet (R3D-18) model, which classifies actions into four categories: NONE, SHOOT, LAYUP, and DUNK. The model is fine-tuned using **Focal Loss** to address the class imbalance inherent in sports highlight detection, where non-highlight actions are significantly more frequent. 
 This loss function down-weights easy examples, allowing the model to focus on harder, rarer events. Probability scores are smoothed over consecutive frames to enhance prediction stability.
 
+<div align="center">
+	<img src="images/confusion_matrix.png" width="400">
+</div>
+<br/>
+
 * [Highlight Extraction]():
 Frames are buffered to form short clips of 15 frames each. If the average action probability within the buffer exceeds a confidence threshold (0.4), the clip is marked as a highlight. This method efficiently captures high-impact moments while filtering out irrelevant frames.
+</details>
 
-<a id="2"></a>
 ## Usage - We're not cavemen! WE HAVE TECHNOLOGY!
 
+Here's how to get started:
+
 <a id="2-1"></a>
-### Prerequisites
+<details open>
+<summary>
+<b> Prerequisites</b>
+</summary>
+<br/>
+
+BBefore you get started with LePatrick Augmentation, make sure you have the following installed:
+</details>
 
 <a id="2-2"></a>
-### Installation
+<details open>
+<summary>
+<b> Installation</b>
+</summary>
+<br/>
 
-<a id="3"></a>
+Follow these steps to get RunTini up and running:
+</details>
+
 ## License - We should take Bikini Bottom, and push it somewhere else!
 Distributed under the Unlicense License. See LICENSE.txt for more information. This means you're free to use, modify, and distribute LePatrick as you see fit – no strings attached!
 
-<a id="4"></a>
 ## Contact - Marty?! Janet?! Who are you people?!
 Have questions, suggestions, or just want to share your favorite bar crawl story? Feel free to reach out!
 
@@ -111,16 +139,14 @@ Have questions, suggestions, or just want to share your favorite bar crawl story
 </table>
 
 <!-- Change it to yours-->
-<table>
-<tr>
-	<td width="50"><img src="https://github.com/hsinchen22.png" style="border-radius: 50%;"></td>
-	<td>
-		<strong><span style="font-size: 1.2em;">Hsin Chen</span></strong><br/>
-		Email: <a href="mailto:hsinchen@stanford.edu">hsinchen@stanford.edu</a><br/>
-		GitHub: <a href="https://github.com/hsinchen22">github.com/hsinchen22</a>
-	</td>
-</tr>
-</table>
+<div style="display: flex; align-items: center; gap: 10px;">
+    <img src="https://github.com/hsinchen22.png" width="100" style="border-radius: 50%;">
+    <div>
+        <strong style="font-size: 1.2em;">Hsin Chen</strong><br>
+        Email: <a href="mailto:hsinchen@stanford.edu">hsinchen@stanford.edu</a><br>
+        GitHub: <a href="https://github.com/hsinchen22">github.com/hsinchen22</a>
+    </div>
+</div>
 
 We look forward to assisting you and ensuring your experience with our product is successful and enjoyable!
 
