@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 ## LePatrick Image Augmentation for Better Detection & Clipping
 
-<img src="images/logo.png" align="right" width="360" style="margin: 10px;">
+<img src="images/logo.png" align="right" width="300">
 
 Meet Mr. Dr. Professor Patrick — the ultimate game-changer in image augmentation! 🎩✨
 
