@@ -86,7 +86,7 @@ Frames are grouped into short clips of 15 frames. If the average action probabil
 ## 🍿 Sample Outputs - LEEDLE LEEDLE LEEDLE LEE!
 
 <img src="images/demo1.gif" width="100%">
-<br/>
+
 <img src="images/demo2.gif" width="100%">
 <br/>
 
