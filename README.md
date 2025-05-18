@@ -1,13 +1,13 @@
 <a id="readme-top"></a>
-## LePatrick Image Augmentation for Better Detection & Clipping
+## LePatrick Image Augmentation for Enhanced Detection & Clipping
 
 <img src="images/logo.png" align="right" width="300">
 
 Meet Mr. Dr. Professor Patrick — the ultimate game-changer in image augmentation! 🎩✨
 
-This project cranks up object detection and supercharges LeBron’s highlight clipping, turning ordinary moments into slam-dunk spectacles like never before.
+This project revolutionizes object detection and takes LeBron’s highlight clipping to the next level, turning ordinary moments into unforgettable slam-dunk spectacles.
 
-🔥🔥🔥 Explore the repo and see how this surprising combo is making it happen!
+🔥🔥🔥 Dive into the repo and discover how this unexpected combo works wonders!
 
 <br/>
 <div>
@@ -22,13 +22,13 @@ This project cranks up object detection and supercharges LeBron’s highlight cl
 
 ### Table of Contents
 - [Overview - Who're you callin pinhead?!](#-overview---whore-you-callin-pinhead)
-	- [How It Works](#-how-it-works)
-	- [Results & Comparison](#-results--comparison)
-	- [Highlight Clipping](#-highlight-clipping)
+	- [How It Works](#how-it-works)
+	- [Results & Comparison](#results--comparison)
+	- [Highlight Clipping](#highlight-clipping)
 
 - [Usage - We're not cavemen! WE HAVE TECHNOLOGY!](#-usage---were-not-cavemen-we-have-technology)
-	- [Prerequisites](#-prerequisites)
-	- [Installation](#-installation)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
 
 - [License - We should take Bikini Bottom, and push it somewhere else!](#-license---we-should-take-bikini-bottom-and-push-it-somewhere-else)
 
@@ -45,10 +45,10 @@ This project playfully pushes the boundaries of image augmentation to seriously 
 The augmentation pipeline employs a series of transformations to generate diverse training samples:
 
 * ["Patrick" Imprinting]():
-The specific visual element is randomly color-augmented with hue and saturation adjustments and randomly scaled within a range of 0.8 to 1.2. This introduces varied appearances and placements to help the model better generalize across different visual conditions.
+The visual element undergoes random color augmentation, including hue and saturation adjustments, and is scaled within a range of 0.8 to 1.2. This introduces variability in appearance and placement, helping the model generalize to different visual conditions.
 
 * [Dynamic Positioning]():
-Augmented Patricks are positioned based on a 2D Gaussian distribution centered on the LeBron bounding boxes, introducing controlled randomness that mimics natural variations and occlusions between players. This helps the model learn to recognize objects despite shifts and partial overlaps in their locations.
+Augmented Patricks are strategically positioned based on a 2D Gaussian distribution centered on the LeBron bounding boxes, simulating natural variations and occlusions. This helps the model recognize objects despite changes in position and partial overlaps.
 
 ### Results & Comparison
 
@@ -61,18 +61,15 @@ We compare the performance of various augmentation techniques.
 <br/>
 
 > [!IMPORTANT]
-> Patrick substantially improves detection performance and is additive with Copy-Paste;
->
-> The combination of Patrick and Copy-Paste consistently outperforms other augmentation methods.
+> Patrick significantly boosts detection performance, especially when combined with Copy-Paste. This hybrid approach consistently outperforms other augmentation techniques.
 
 ### Highlight Clipping
 
 * [LeBron Detection]():
-A YOLO model is used to detect LeBron in each video frame, generating bounding boxes to isolate him from the background. To maintain consistent localization, the bounding box coordinates are slightly padded. This process ensures reliable tracking and minimizes jitter across frames.
+A fine-tuned YOLO model detects LeBron in each video frame, creating bounding boxes to isolate him from the background. Bounding box coordinates are slightly padded to maintain consistent localization and minimize jitter.
 
 * [Action Classification]():
-Detected clips are preprocessed and fed into a fine-tuned 3D ResNet (R3D-18) model, which classifies actions into four categories: NONE, SHOOT, LAYUP, and DUNK. The model is fine-tuned using **Focal Loss** to address the class imbalance inherent in sports highlight detection, where non-highlight actions are significantly more frequent. 
-This loss function down-weights easy examples, allowing the model to focus on harder, rarer events. Probability scores are smoothed over consecutive frames to enhance prediction stability.
+Clips are processed and fed into a fine-tuned 3D ResNet (R3D-18) model, classifying actions as NONE, SHOOT, LAYUP, or DUNK. Fine-tuning with **Focal Loss** addresses class imbalance by focusing on challenging, rare events. Frame probability scores are smoothed to enhance stability.
 
 <div align="center">
 	<img src="images/confusion_matrix.png" width="400">
@@ -80,31 +77,31 @@ This loss function down-weights easy examples, allowing the model to focus on ha
 <br/>
 
 * [Highlight Extraction]():
-Frames are buffered to form short clips of 15 frames each. If the average action probability within the buffer exceeds a confidence threshold (0.4), the clip is marked as a highlight. This method efficiently captures high-impact moments while filtering out irrelevant frames.
+Frames are grouped into short clips of 15 frames. If the average action probability in the buffer exceeds a confidence threshold, the clip is marked as a highlight, efficiently capturing significant moments.
 
 <br/>
 
 ## 📦 Usage - We're not cavemen! WE HAVE TECHNOLOGY!
 
-Here's how to get started:
+To get started:
 
 ### Prerequisites
 
-Before you get started with LePatrick Augmentation, make sure you have the following installed:
+Make sure you have the necessary tools installed:
 
 ### Installation
 
-Follow these steps to get RunTini up and running:
+Follow the setup instructions to run LePatrick smoothly:
 
 <br/>
 
 ## 📝 License - We should take Bikini Bottom, and push it somewhere else!
-Distributed under the Unlicense License. See LICENSE.txt for more information. This means you're free to use, modify, and distribute LePatrick as you see fit – no strings attached!
+Distributed under the Unlicense License. Feel free to use, modify, and share LePatrick without any restrictions.
 
 <br/>
 
 ## 📬 Contact - Marty?! Janet?! Who are you people?!
-Have questions, suggestions, or just want to share your favorite bar crawl story? Feel free to reach out!
+For questions, suggestions, or feedback, reach out to:
 
 <b>Hsin Chen</b><br/>
 Email: <a href="mailto:hsinchen@stanford.edu">hsinchen@stanford.edu</a><br/>
