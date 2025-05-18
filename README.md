@@ -26,6 +26,8 @@ This project revolutionizes object detection and takes LeBron’s highlight clip
 	- [Results & Comparison](#results--comparison)
 	- [Highlight Clipping](#highlight-clipping)
 
+- [Sample Outputs - LEEDLE LEEDLE LEEDLE LEE!](#-sample-outputs---leedle-leedle-leedle-lee)
+
 - [Usage - We're not cavemen! WE HAVE TECHNOLOGY!](#-usage---were-not-cavemen-we-have-technology)
 	- [Prerequisites](#prerequisites)
 	- [Installation](#installation)
@@ -34,12 +36,6 @@ This project revolutionizes object detection and takes LeBron’s highlight clip
 
 - [Contact - Marty?! Janet?! Who are you people?!](#-contact---marty-janet-who-are-you-people)
 
-<br/>
-
-<div align="center">
-	<img src="images/demo1.gif" width="49%">
-	<img src="images/demo2.gif" width="49%">
-</div>
 <br/>
 
 ## ⭐ Overview - Who're you callin pinhead?!
@@ -85,6 +81,13 @@ Clips are processed and fed into a fine-tuned 3D ResNet (R3D-18) model, classify
 * [Highlight Extraction]():
 Frames are grouped into short clips of 15 frames. If the average action probability in the buffer exceeds a confidence threshold, the clip is marked as a highlight, efficiently capturing significant moments.
 
+<br/>
+
+## 🍿 Sample Outputs - LEEDLE LEEDLE LEEDLE LEE!
+
+<img src="images/demo1.gif" width="100%">
+<br/>
+<img src="images/demo2.gif" width="100%">
 <br/>
 
 ## 📦 Usage - We're not cavemen! WE HAVE TECHNOLOGY!
