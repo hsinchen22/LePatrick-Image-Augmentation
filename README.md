@@ -22,13 +22,13 @@ This project revolutionizes object detection and takes LeBron’s highlight clip
 
 ### Table of Contents
 - [Overview - Who're you callin pinhead?!](#-overview---whore-you-callin-pinhead)
-	- [How It Works](#-how-it-works)
-	- [Results & Comparison](#-results--comparison)
-	- [Highlight Clipping](#-highlight-clipping)
+	- [How It Works](#how-it-works)
+	- [Results & Comparison](#results--comparison)
+	- [Highlight Clipping](#highlight-clipping)
 
 - [Usage - We're not cavemen! WE HAVE TECHNOLOGY!](#-usage---were-not-cavemen-we-have-technology)
-	- [Prerequisites](#-prerequisites)
-	- [Installation](#-installation)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
 
 - [License - We should take Bikini Bottom, and push it somewhere else!](#-license---we-should-take-bikini-bottom-and-push-it-somewhere-else)
 
