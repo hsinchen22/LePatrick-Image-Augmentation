@@ -70,6 +70,22 @@ We compare the performance of various augmentation techniques.
 <a id="1-3"></a>
 ### Highlight Clipping
 
+[LeBron Detection]():
+A YOLO model is used to detect LeBron in each video frame, generating bounding boxes to isolate him from the background. To maintain consistent localization, the bounding box coordinates are slightly padded. This process ensures reliable tracking and minimizes jitter across frames.
+
+[Action Classification]():
+Detected clips are preprocessed and fed into a fine-tuned 3D ResNet (R3D-18) model, which classifies actions into four categories: NONE, SHOOT, LAYUP, and DUNK.
+
+<div align="center" style="margin: 10px;">
+	<img src="images/confusion_matrix.png" width="300">
+</div>
+
+The model is fine-tuned using **Focal Loss** to address the class imbalance inherent in sports highlight detection, where non-highlight actions are significantly more frequent. 
+This loss function down-weights easy examples, allowing the model to focus on harder, rarer events. Probability scores are smoothed over consecutive frames to enhance prediction stability.
+
+[Highlight Extraction]():
+Frames are buffered to form short clips of 15 frames each. If the average action probability within the buffer exceeds a confidence threshold (0.4), the clip is marked as a highlight. This method efficiently captures high-impact moments while filtering out irrelevant frames.
+
 <a id="2"></a>
 ## Usage - We're not cavemen! WE HAVE TECHNOLOGY!
 
