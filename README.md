@@ -3,7 +3,9 @@
 
 <img src="/images/logo.png" align="right" width="200">
 
-"Leedle leedle lee!" We've cooked up something special with a Friend Named Patrick. This project aims to supercharge object detection and highlight clipping, bringing you LeBron's epic moments like never before. 👑🔥
+LEEDLE LEEDLE LEEDLE LEE! We've cooked up something special with a friend named Patrick! 👑🔥
+
+This project playfully bends the rules of image augmentation to seriously amp up object detection and give highlight clipping a major upgrade, bringing you LeBron's epic moments like never before!
 
 [Explore the repo and see how this surprising combination is making it happen! »]()
 
