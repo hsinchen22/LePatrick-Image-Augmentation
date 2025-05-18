@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 ## LePatrick Image Augmentation for Better Detection & Clipping
 
-<img src="images/logo.png" align="right" width="360">
+<img src="images/logo.png" align="right" width="360" style="margin: 10px;">
 
 Meet Mr. Dr. Professor Patrick — the ultimate game-changer in image augmentation! 🎩✨
 
@@ -73,7 +73,7 @@ We compare the performance of various augmentation techniques.
 [LeBron Detection]():
 A YOLO model is used to detect LeBron in each video frame, generating bounding boxes to isolate him from the background. To maintain consistent localization, the bounding box coordinates are slightly padded. This process ensures reliable tracking and minimizes jitter across frames.
 
-<img src="images/confusion_matrix.png" align="right" width="300">
+<img src="images/confusion_matrix.png" align="right" width="250" style="margin: 10px;">
 
 [Action Classification]():
 Detected clips are preprocessed and fed into a fine-tuned 3D ResNet (R3D-18) model, which classifies actions into four categories: NONE, SHOOT, LAYUP, and DUNK.
