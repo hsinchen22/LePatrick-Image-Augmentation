@@ -96,11 +96,11 @@ To get started:
 
 ### Prerequisites
 
-Make sure you have the necessary tools installed:
+```stay tuned```
 
 ### Installation
 
-Follow the setup instructions to run LePatrick smoothly:
+```stay tuned```
 
 <br/>
 
