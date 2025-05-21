@@ -112,11 +112,13 @@ Distributed under the Unlicense License. Feel free to use, modify, and share LeP
 ## 📬 Contact - Marty?! Janet?! Who are you people?!
 For questions, suggestions, or feedback, reach out to:
 
-<b>Hsin Chen</b><br/>
+<b>Newton Chen</b><br/>
 Email: <a href="mailto:hsinchen@stanford.edu">hsinchen@stanford.edu</a><br/>
 GitHub: <a href="https://github.com/hsinchen22">github.com/hsinchen22</a>
 
-<!-- put yours-->
+<b>Justin Yu</b><br/>
+Email: <a href="mailto:tiy035@ucsd.edu??">tiy035@ucsd.edu</a><br/>
+GitHub: <a href="https://github.com/justinyuyu">github.com/justinyuyu</a>
 
 
 We look forward to assisting you and ensuring your experience with our product is successful and enjoyable!
