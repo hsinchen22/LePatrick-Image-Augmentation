@@ -25,15 +25,12 @@ This project revolutionizes object detection and takes LeBron’s highlight clip
 	- [How It Works](#how-it-works)
 	- [Results & Comparison](#results--comparison)
 	- [Highlight Clipping](#highlight-clipping)
-
 - [Sample Outputs - LEEDLE LEEDLE LEEDLE LEE!](#-sample-outputs---leedle-leedle-leedle-lee)
-
-- [Usage - We're not cavemen! WE HAVE TECHNOLOGY!](#-usage---were-not-cavemen-we-have-technology)
+- [Usage - We're not cavemen... WE HAVE TECHNOLOGY!](#-usage---were-not-cavemen-we-have-technology)
 	- [Prerequisites](#prerequisites)
 	- [Installation](#installation)
-
+	- [Basic Example](#basic-example) 
 - [License - We should take Bikini Bottom, and push it somewhere else!](#-license---we-should-take-bikini-bottom-and-push-it-somewhere-else)
-
 - [Contact - Marty?! Janet?! Who are you people?!](#-contact---marty-janet-who-are-you-people)
 
 <br/>
@@ -90,17 +87,46 @@ Frames are grouped into short clips of 15 frames. If the average action probabil
 <img src="images/demo2.gif" width="100%">
 <br/>
 
-## 📦 Usage - We're not cavemen! WE HAVE TECHNOLOGY!
+## 📦 Usage - We're not cavemen... WE HAVE TECHNOLOGY!
 
-To get started:
+Getting started with LePatrick is simple and fun — no chiseling stone tablets required.
 
 ### Prerequisites
 
-```stay tuned```
+- Python **3.10** or newer
 
 ### Installation
 
-```stay tuned```
+Install LePatrick directly from [PyPI](https://pypi.org/project/LePatrick):
+
+```bash
+pip install LePatrick==0.1.0
+```
+> [!NOTE]
+> This will automatically install required dependencies like opencv-python and numpy.
+
+### Basic Example
+
+Here’s how to apply Patrick imprints to your dataset:
+```python
+import cv2
+from LePatrick import Patrick
+
+Patrick(
+    source_dir = "data/train",
+    num_outputs = 1000,
+    num_patricks = 5
+)
+```
+
+- `source_dir`: Path to your input folder
+- `num_outputs`: Number of augmented images to generate
+- `num_patricks`: Number of Patrick imprints per image
+
+> [!NOTE]
+> The `patrick.png` asset is bundled within the package — no extra downloads needed!
+
+🎉🎉🎉 **You're all set! It’s as simple as it is.**
 
 <br/>
 
