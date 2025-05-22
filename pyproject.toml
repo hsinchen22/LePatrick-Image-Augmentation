@@ -1,0 +1,25 @@
+[project]
+name = "LePatrick"
+version = "0.1.0"
+description = "Augment images with Patrick imprints."
+readme = "README.md"
+authors = [
+    { name = "Newton Chen", email = "rfnewton22@gmail.com" },
+    { name = "Justin Yu", email = "justinyu1101@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python==4.9.0.80",
+    "numpy==1.26.4",
+]
+
+[tool.setuptools]
+packages = ["LePatrick"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"LePatrick" = ["assets/*.png"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
