@@ -93,7 +93,11 @@ Getting started with LePatrick is simple and fun — no chiseling stone tablets 
 
 ### Prerequisites
 
-- Python **3.10** or newer
+- **Python 3.10** or newer
+- A **YOLO**-formatted dataset with **polygon** annotations
+
+> [!TIP]
+> This [Roboflow dataset](https://app.roboflow.com/highlight-fyxuq/lebron-uol5n) is fully compatible and a great starting point.
 
 ### Installation
 
