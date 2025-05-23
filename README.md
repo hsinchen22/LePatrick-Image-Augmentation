@@ -97,7 +97,7 @@ Getting started with LePatrick is simple and fun — no chiseling stone tablets 
 - A **YOLO**-formatted dataset with **polygon** annotations
 
 > [!TIP]
-> This [Roboflow dataset](https://app.roboflow.com/highlight-fyxuq/lebron-uol5n) is fully compatible and a great starting point.
+> This [Roboflow dataset](https://universe.roboflow.com/highlight-fyxuq/lebron-uol5n/dataset/2) is fully compatible and a great starting point.
 
 ### Installation
 
@@ -122,9 +122,6 @@ Patrick(
     mode: str = "save"		# "save" files to folder OR "preview" augmented images
 )
 ```
-
-> [!NOTE]
-> The `patrick.png` asset is bundled within the package — no extra downloads needed!
 
 🎉🎉🎉 **You're all set! It’s as simple as it is.**
 
