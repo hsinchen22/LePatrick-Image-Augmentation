@@ -113,19 +113,15 @@ pip install LePatrick
 
 Here’s how to apply Patrick imprints to your dataset:
 ```python
-import cv2
 from LePatrick import Patrick
 
 Patrick(
-    source_dir = "data/train",
-    num_outputs = 1000,
-    num_patricks = 5
+    source_dir = "data/train",	# Path to your input folder
+    num_outputs = 1000,		# Number of augmented images to generate
+    num_patricks = 5,		# Number of Patrick imprints applied per object
+    mode: str = "save"		# "save" files to folder OR "preview" augmented images
 )
 ```
-
-- `source_dir`: Path to your input folder
-- `num_outputs`: Number of augmented images to generate
-- `num_patricks`: Number of Patrick imprints per image
 
 > [!NOTE]
 > The `patrick.png` asset is bundled within the package — no extra downloads needed!
