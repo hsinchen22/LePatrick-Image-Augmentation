@@ -104,7 +104,7 @@ Getting started with LePatrick is simple and fun — no chiseling stone tablets 
 Install LePatrick directly from [PyPI](https://pypi.org/project/LePatrick):
 
 ```bash
-pip install LePatrick==0.1.0
+pip install LePatrick
 ```
 > [!NOTE]
 > This will automatically install required dependencies like opencv-python and numpy.
